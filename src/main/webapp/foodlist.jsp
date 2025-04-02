@@ -7,12 +7,13 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<html>
+<%@ taglib prefix="z" tagdir="/WEB-INF/tags" %>
+<z:layout title=""><html>
 <head>
     <title>Ételek listája</title>
 </head>
 <body>
-<h1>Ételek listája</h1>
+
 <table border="1">
     <thead>
     <tr>
@@ -50,4 +51,7 @@
 </table>
 </body>
 </html>
+    <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %></z:layout>
+
+
 
