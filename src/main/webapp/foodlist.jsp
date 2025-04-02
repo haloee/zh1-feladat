@@ -38,6 +38,10 @@
                     <input type="hidden" name="id" value="${food.id}" />
                     <button type="submit">Kedvenc</button>
                 </form>
+                <form method="post" action="${pageContext.request.contextPath}/xml" style="display:inline;">
+                    <input type="hidden" name="id" value="${food.id}" />
+                    <button type="submit">XML log</button>
+                </form>
             </td>
         </tr>
     </c:forEach>
