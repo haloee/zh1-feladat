@@ -34,6 +34,10 @@
                     <input type="hidden" name="id" value="${food.id}" />
                     <button type="submit">Törlés</button>
                 </form>
+                <form method="post" action="${pageContext.request.contextPath}/favorite-food" style="display:inline;">
+                    <input type="hidden" name="id" value="${food.id}" />
+                    <button type="submit">Kedvenc</button>
+                </form>
             </td>
         </tr>
     </c:forEach>
