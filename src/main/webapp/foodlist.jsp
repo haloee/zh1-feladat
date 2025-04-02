@@ -29,8 +29,15 @@
             <td>${food.restaurantName}</td>
             <td>${food.foodName}</td>
             <td>${food.price}</td>
+            <td>
+                <form method="post" action="${pageContext.request.contextPath}/delete-food" style="display:inline;">
+                    <input type="hidden" name="id" value="${food.id}" />
+                    <button type="submit">Törlés</button>
+                </form>
+            </td>
         </tr>
     </c:forEach>
+
     </tbody>
 </table>
 </body>
